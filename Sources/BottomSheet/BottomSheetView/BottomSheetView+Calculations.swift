@@ -46,7 +46,7 @@ internal extension BottomSheetView {
 #if os(macOS)
             return NSApplication.shared.mainMenu?.menuBarHeight ?? 20
 #else
-            return UIApplication.shared.windows.first?.safeAreaInsets.top ?? 10
+            return 64
 #endif
         } else {
             return 0
